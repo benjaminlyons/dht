@@ -174,7 +174,7 @@ def update_name_server(port, project_name):
         time.sleep(60)
 
 def main():
-    if not sys.argv[1]:
+    if len(sys.argv) < 2:
         print("Usage: ./HashTableServer.py SERVICENAME")
         sys.exit(1)
 
